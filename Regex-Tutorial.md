@@ -112,7 +112,7 @@ When using the OR operator (`|`), it ensures that the expression does not requir
 
 ### Flags
 
-Flags are typically placed at the end of a regex, after the second slash. They are used to define additional functionality or limits for the regex. Below are the three most common flags:
+Flags are typically placed at the end of a regex, after the second slash. They are used to define additional functionality or limits for the regex. Below are examples of the three most common flags:
 
 - `g` — Global search — regex should be tested against all matches in a string 
 - `i` — Case-insensitive search — case should be ignored while attempting a match
