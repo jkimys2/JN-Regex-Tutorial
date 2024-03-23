@@ -1,6 +1,6 @@
 # REGEX TUTORIAL
 
-Introductory paragraph (replace this with your text)
+A regex, or regular expression, is a sequence of characters that defines a specific search pattern. It is quite useful when used in code or search algorithms. They can be used to find certain patterns of characters or to replace characters within a string. They are also used to validate input data. This tutoril will break down each part of the regex and what it does!
 
 ## Summary
 
