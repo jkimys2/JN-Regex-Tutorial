@@ -97,6 +97,17 @@ We do have a `\d` in our regex, which is a character class that matches any Arab
 
 ### The OR Operator
 
+Using a bracket expression means that it doesn not require the string to meet all of the requirements inside the pattern. You will want to add the same logic outside of a bracket expresssion, especially when working with grouping constructs. You will need to use the OR operator (`|`) to do so.
+
+Since it is not included in our email regex, another example will be provided.
+
+`(abc) : (xyz)`
+
+Now using the OR operator:
+
+`(a|b|c) : (x|y|z)`
+
+When using the OR operator (`|`), it ensures that the expression does not require the string to meet all of the requirements. So the strings `"abc:xyz"`, `"acb:xyz"`, and even `"a:z"` would all match, all due to the OR operator!
 
 
 ### Flags
