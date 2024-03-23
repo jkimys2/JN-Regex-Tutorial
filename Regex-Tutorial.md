@@ -130,3 +130,7 @@ For example, in our email regex, we can see the `\.` character escape. This mean
 
 ## Author
 
+This tutorial was created by Jordan Newhouse!
+
+[GitHub](https://github.com/jkimys2) <br>
+[Regex Tutorial](https://github.com/jkimys2/JN-Regex-Tutorial)
