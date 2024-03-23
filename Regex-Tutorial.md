@@ -68,6 +68,7 @@ In our email regex above, we have 3 different subexpressions. This means that ou
 ### Bracket Expressions
 
 Bracket expressions represent a range of characters that we want to match. They outline the characters that we want to include. You can insert any characters you wish to include inside of brackets (`[ ]`) by following these guidelines:
+
 - `[a—z]` — the string can contain any lowercase letters from a to z (will only look for lowercase letters)
 - `[0—9]` — the string can contain any number from 0 to 9
 - `[_-] — the string can contain an underscore or hyphen;
@@ -82,6 +83,16 @@ This means that the input email can meet any of these requirements, but is not r
 
 ### Character Classes
 
+Character classes difine a set of characters, any of which can occur in an input string to fulfill a match. Here are some commone character classes:
+
+- `.` — matches any character except the newline character (`\n`)
+- `\d` — matches any Arabic numerical digit
+- `\w` — matches any alphanumeric character from the basic Latin alphabet, including the underscore
+- `\s` — matches a single whitespace character, including tabs and line breaks 
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+We do have a `\d` in our regex, which is a character class that matches any Arabic numerical digit. This class is equivalent to the bracket expression `[0-9]`!
 
 
 ### The OR Operator
