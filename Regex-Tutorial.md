@@ -47,7 +47,7 @@ Quantifiers set the limits of the string that your regex matches. They specify h
     * `{ n }` matches the pattern exactly n number of times
     * `{ n, }` matches the pattern at least n number of times
     * ` { n, x }` matches the pattern from a minimum of n number of times to maximum of x number of times
-- adding `?` after each of the quantifiers makes each of them lazy.
+- Adding `?` after each of the quantifiers makes each of them lazy.
 
 In the case of our email regex, `([a-z0-9_\.-]+)`, it contains the `+` quantifier. This means that the email that the user provides needs to contain at least one of the characts inside the brackets in order to match. 
 
@@ -58,6 +58,11 @@ If any of these requirements are not met, then the email will not be accepted.
 
 ### Grouping Constructs
 
+As the regex becomes more complex, you may need to break up the strings into different sections in order to fulfill different requirements. Those different sections are called grouping constructs. They are split into differnt grouping constructs by using parentheses. Each section within the parentheses is known as a subexpression.
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+In our email regex above, we have 3 different subexpressions. This means that our regex is split into 3 grouping constructs, and we have 3 requirements that we want to fulfill. 
 
 
 ### Bracket Expressions
