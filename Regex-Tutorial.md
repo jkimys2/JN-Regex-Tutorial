@@ -2,9 +2,15 @@
 
 A regex, or regular expression, is a sequence of characters that defines a specific search pattern. It is quite useful when used in code or search algorithms. They can be used to find certain patterns of characters or to replace characters within a string. They are also used to validate input data. This tutoril will break down each part of the regex and what it does!
 
+
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial will discuss how the components of a regex can be used to verify that the user provided a valid email address: 
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+Each component of this regex has its own unique responsibility to ensure that what the user passed in is indeed a valid email addresss, and each part is essential in making sure that the expression works correctly. 
+
 
 ## Table of Contents
 
@@ -16,6 +22,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
+
 
 ## Regex Components
 
