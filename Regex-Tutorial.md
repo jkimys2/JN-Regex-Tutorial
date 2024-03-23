@@ -76,7 +76,7 @@ Bracket expressions represent a range of characters that we want to match. They 
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-So in the case of our email regex, we are looking for any lowercase letters from a to z, any numbers from 0 to 9, and for any special characters such as underscores, hyphens, backslashes, and periods.
+So in the case of our email regex, we are looking for any lowercase letters from a to z, any numbers from 0 to 9, and for any special characters such as underscores, hyphens, and periods.
 
 This means that the input email can meet any of these requirements, but is not required to meet all of hte requirements. Even if it meets 1 of the requirements, it will still be accepted. 
 
@@ -121,9 +121,15 @@ Flags are typically placed at the end of a regex, after the second slash. They a
 
 ### Character Escapes
 
+In a regex, the backslash (`\`) represents a character escape. This escapes a character that otherwise would be interpreted literally. For example, the open curly brace (`{`) begins a quantifier, but when used with a backslash, it will prompt the regex to look for the open curly brace character as part of the string instead of beginning to define a character. 
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+For example, in our email regex, we can see the `\.` character escape. This means that we are including the period as a charcter, and not trying to use it as a [character class](#character-classes), like we defined earlier. 
 
 
 ## Author
+
 
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
