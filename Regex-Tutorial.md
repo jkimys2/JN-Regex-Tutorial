@@ -28,20 +28,41 @@ Each component of this regex has its own unique responsibility to ensure that wh
 
 ### Anchors
 
+The characters `^` and `$` are considered anchors. The `^` anchor is used to signify the characters that follow the string. The `$` anchor signifies a string that ends with the charactors that precede it.
+
+So when we look at our email regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`, we are saying that we saying that the email pattern must start with `([a-z0-9_\.-]+)`, and it must end with `([a-z\.]{2,6})`. 
+
+If it does not start or end with those given parameters, it will not be considered an email, and will not be accepted. 
+
 ### Quantifiers
+
+
 
 ### Grouping Constructs
 
+
+
 ### Bracket Expressions
+
+
 
 ### Character Classes
 
+
+
 ### The OR Operator
+
+
 
 ### Flags
 
+
+
 ### Character Escapes
 
+
+
 ## Author
+
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
